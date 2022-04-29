@@ -1,5 +1,17 @@
+// number counter 
+// number counter 
+
+const bonusText = document.querySelectorAll(".bonus-clac--num");
+// const counters = document.querySelectorAll('.valuess');
+const speed = 200;
+
+
+
+
+
+
+
 const bonusRange = document.querySelector(".js-range-slider");
-const bonusText = document.getElementById("bonus-clac--num");
 let activeImg = document.querySelectorAll(".range-img");
 let bonusBox = document.querySelector('.bonus-calc')
 bonusRange.addEventListener("input", (event) => {
@@ -11,7 +23,7 @@ bonusRange.addEventListener("input", (event) => {
 
   if (bonusRange.value == "0") {
     activeImg[0].style.transform = `scale(1.3)`;
-    bonusText.innerHTML = `2 000`;
+    // bonusText.innerHTML = `2 000`;
     activeImg[0].classList.remove('active');
 
   }
@@ -21,12 +33,36 @@ bonusRange.addEventListener("input", (event) => {
 });
 
 function sliderAdd(bonusRangeValue) {
+  bonusText.forEach( counter => {
+    const animate = () => {
+       const value = +counter.getAttribute('akhi');
+       const data = +counter.innerText;
+      
+       const time = value / speed;
+      if(data < value) {
+           counter.innerText = Math.ceil(data + time);
+           setTimeout(animate, 0);
+         }
+         else{
+           counter.innerText = value;
+         }
+      
+    }
+    
+    animate();
+ });
   for (i = 1; i <= bonusRangeValue; i++) {
     activeImg[i].classList.add("active");
     activeImg.forEach((element) => {
       element.style.transform = `scale(0.${100 - bonusRangeValue * 2})`;
     });
-    bonusText.innerHTML = `${2 * (i + 1)} 000`;
+    
+ 
+   
+    bonusText[0].setAttribute('akhi', `${2 * (i + 1)}000`)
+    // bonusText[0].innerHTML = `ok + ${ok}`
+    // bonusText.innerHTML = `${2 * (i + 1)} 000`;
+    // bonusText.setAttribute('akhi', '2000')
     // bonusBox.innerHTML += '<img src="img/bonus.svg" alt="">';
   }
 }

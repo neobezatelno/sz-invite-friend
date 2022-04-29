@@ -1,0 +1,110 @@
+@media screen and (min-width: 900px) {
+    .header-content h1:nth-child(1) {
+        display: none;
+    }
+
+    .dekstop-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 48px;
+    }
+
+    .container {
+        max-width: 1140px;
+        padding: unset;
+    }
+
+    .header-content {
+        border-radius: unset;
+        padding-top: 82px;
+    }
+
+    .header-content-right h1:nth-child(1),
+    .footer-em br {
+        display: block;
+    }
+
+    .footer-em {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .bonus-calc {
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+
+    .btn-invite {
+        width: unset;
+        display: inline-block;
+        padding: 15px 102px;
+    }
+
+    .header-info--muted br {
+        display: block;
+    }
+
+    .header-info .header-info--p {
+        /* display: none; */
+    }
+.dekstop-flex:nth-child(2) .header-info .header-info--p {
+    display: none;
+}
+.header-info--p {
+    font-size: 21px;
+line-height: 25px;
+}
+.dekstop-flex:nth-child(3) {
+    margin-top: 80px;
+    column-gap: 50px;
+}
+.dekstop-flex:nth-child(3) .header-info--p:nth-child(1),
+.dekstop-flex:nth-child(3) .header-info--p:nth-child(2) {
+    max-width: 445px;
+}
+
+    .range-slider-interact {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .header-rangeslider-imgs {
+        height: 572px;
+        margin-bottom: 65px;
+    }
+
+    .range-img-first {
+        transform: scale(1);
+    }
+
+    .range-img-first,
+    .range-img {
+        width: 372px;
+
+    }
+
+    .bonus-info--list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
+        column-gap: 60px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .bonus-info--content h2 {
+        font-size: 30px;
+    }
+
+    .bonus-box {
+        margin: unset;
+    }
+
+    .bonus-info .btn-invite {
+        margin: 55px auto 30px;
+        display: table;
+    }
+    .friend {
+        padding-bottom: 165px;
+    }
+}
