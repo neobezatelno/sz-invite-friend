@@ -29,7 +29,7 @@ bonusRange.addEventListener("input", () => {
     sliderRemove(parseInt(bonusRange.value));
 
     if (bonusRange.value === "0") {
-        activeImg[0].style.transform = `scale(1.3)`;
+        // activeImg[0].style.transform = `scale(1.3)`;
         bonusText.innerHTML = `2 000`;
         inviteFriendQuantity.innerHTML = `1 друга`
         activeImg[0].classList.remove('active');
@@ -61,4 +61,19 @@ function sliderRemove(bonusRangeValue) {
         }
         activeImg[i].style.transform = `scale(0)`;
     }
+}
+
+
+
+window.addEventListener('resize', () => {
+    console.log('123')
+    // if(window.innerWidth > 900)
+})
+
+if(window.innerWidth > 900)  {
+    let bonusBoxHeight = document.querySelectorAll('.bonus-box');
+console.log(bonusBoxHeight[0].clientHeight)
+bonusBoxHeight[1].style.height = bonusBoxHeight[0].clientHeight + 'px';
+}
+window.onscroll = () => {
 }
