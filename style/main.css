@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap');
 
+.blackhole {
+    position: absolute;
+    width: 345.01px;
+    height: 56.8px;
+    transform-origin: bottom;
+    background: black;
+    border-radius: 180%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +21,20 @@
     display: flex;
     align-items: center;
 }
-
+.enigma {
+    bottom: 0;
+    z-index: 100;
+    transform: translateY(50%) translateX(50%);
+    width: 120%;
+    right: 50%;
+    position: absolute;
+}
 .friend {
     overflow: hidden;
     background: #5553BF;
     font-family: 'Inter', sans-serif;
 }
-.dekstop-flex:nth-child(3) {
-    display: none;
-}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -136,7 +150,6 @@ box-shadow: 0px 32px 72px rgba(0, 0, 0, 0.15);
     visibility: visible;
     transform-origin:  bottom center;
     transform:  scale(1.3);
-    width: 154px;
 
 }
 .header-content h3 {
@@ -249,8 +262,8 @@ border-radius: 50%;
     width: 100%;
 }
 .bonus-box {
+    text-align: left;
     position: relative;
-    margin: 20px -15px;
     border-radius: 15px;
     display: flex;
     flex-flow: column;
@@ -279,11 +292,16 @@ color: #6563D4;
 
 .bonus-box-wrapper img {
     width: 100%;
-    transform: translateY(73px);
-}
-.bonus-box-wrapper {
-    margin-top: -59px;
     position: relative;
+}
+
+.bonus-box-wrapper {
+    margin-top: 163px;
+    position: relative;
+    text-align: center;
+    
+    display: flex;
+    flex-flow: column;
 }
 .bonus-box-wrapper:before {
     content:'';
@@ -294,6 +312,7 @@ top: 75px;
 background: #FFFFFF;
 opacity: 0.5;
 filter: blur(100px);
+
 }
 .footer-em {
     font-style: italic;
