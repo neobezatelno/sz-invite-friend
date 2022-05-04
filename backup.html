@@ -5,40 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/range.css">
     <title>Пригласи друга</title>
 </head>
-<style>
-    .blackholesvg {
-        margin-top: 50px;
-    }
-    
-   
-    .imgs {
-        width: 437.01px;
-        height: 600px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-1 {
-        position: absolute;
-        transform-origin: center center;
-        z-index: 1;
-    }
-</style>
+
 <body>
-    <div class="imgs">
-        <img class="img-1" src="img/1.png" alt="">
-        <div class="blackhole">
-            <svg width="100%" height="100%" viewBox="0 0 334 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M333.29 0V45.06H0V0H28.14C28.14 9.94 90.14 18 166.64 18C243.14 18 305.14 9.94 305.14 0H333.29Z" fill="#6563D4"/>
-                </svg>
-                
-            <!-- <img src="img/1.png" alt=""> -->
+    <main class="friend">
+
+
+        <div class="header-content">
+            <div class="container">
+                <h1>Пригласи друга</h1>
+                <div class="header-rangeslider">
+                    <div class="header-rangeslider-imgs">
+                        <img class="range-img range-img-first" src="img/z.png">
+                        <img src="img/img-slider2.png" alt="" class="range-img">
+                        <img src="img/img-slider3.png" alt="" class="range-img">
+                        <img src="img/img-slider4.png" alt="" class="range-img">
+                        <img src="img/img-slider5.png" alt="" class="range-img">
+                        <img src="img/img-slider6.png" alt="" class="range-img">
+                        <img src="img/img-slider7.png" alt="" class="range-img">
+                        <img class="range-hole" src="img/rangeHole.svg" alt="">
+
+                    </div>
+                    <div class="range-slider-interact">
+                        <input class="js-range-slider" min="0" max="6" id="slider" name="slider" type="range" value=0>
+                        <div class="range-slider-interact--element">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Приглашая 7 друзей,<br>
+                    вы получаете:</h3>
+                <div class="bonus-calc flex">
+                    <span id="bonus-clac--num">2 000</span>
+                    <img src="img/bonus.svg" alt="">
+                </div>
+                <a href="#" class="btn-invite">
+                    Пригласить
+                </a>
+                <div class="header-info">
+                    <div class="header-info--muted">
+                        * Калькулятор рассчитывает возможное, а не гарантированное вознаграждение. В расчетах для
+                        примера использована сумма пополнения 10 000 ₸.
+                    </div>
+                    <div class="header-info--p">
+                        Пригласи друга и подари ему 20% бонусов от первого пополнения кошелька, а также получи 20%
+                        бонусов на свой бонусный счет.
+                    </div>
+                    <div class="header-info--p">
+                        Например. <em>
+                            Твой друг зарегистрировался по твоей ссылке и пополнил кошелек на 10 000 ₸. Мы начислим по 2
+                            000 бонусов тебе и твоему другу.
+                        </em>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- <div class="blackholesvg">
-        <img src="img/rangeHole.svg" alt="">
-    </div> -->
+        <section class="bonus-info"></section>
+    </main>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
