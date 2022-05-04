@@ -13,16 +13,12 @@
         max-width: 1140px;
         padding: unset;
     }
-    .bonus-info .dekstop-flex img {
-        height: 322px;
-    }
+
     .header-content {
         border-radius: unset;
         padding-top: 82px;
     }
-    /* .header-content:before {
-        
-    } */
+
     .header-content-right h1:nth-child(1),
     .footer-em br {
         display: block;
@@ -110,8 +106,5 @@ line-height: 25px;
     }
     .friend {
         padding-bottom: 165px;
-    }
-    .bonus-box-wrapper img {
-        width: 70%;
     }
 }
