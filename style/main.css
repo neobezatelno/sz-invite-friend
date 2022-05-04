@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&display=swap');
 
+.blackhole {
+    position: absolute;
+    width: 345.01px;
+    height: 56.8px;
+    transform-origin: bottom;
+    background: black;
+    border-radius: 180%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +21,14 @@
     display: flex;
     align-items: center;
 }
-
+.enigma {
+    bottom: 0;
+    z-index: 100;
+    transform: translateY(50%) translateX(50%);
+    width: 120%;
+    right: 50%;
+    position: absolute;
+}
 .friend {
     overflow: hidden;
     background: #5553BF;

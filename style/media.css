@@ -20,7 +20,9 @@
         border-radius: unset;
         padding-top: 82px;
     }
-
+    /* .header-content:before {
+        
+    } */
     .header-content-right h1:nth-child(1),
     .footer-em br {
         display: block;
